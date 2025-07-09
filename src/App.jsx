@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -21,9 +21,17 @@ function RegisterAndLogout() {
   return <Register />
 }
 
+useEffect(() => {
+  const redirect = sessionStorage.redirect;
+  if (redirect) {
+    sessionStorage.removeItem("redirect");
+    window.history.replaceState(null, "", redirect);
+  }
+}, []);
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PhonePageFrontend/">
       <Routes>
         <Route path="/" element={
           <ProtectedRoute>
@@ -75,4 +83,4 @@ function App() {
   )
 }
 
-export default App
+export default App  
