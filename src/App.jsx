@@ -21,7 +21,9 @@ function RegisterAndLogout() {
   return <Register />
 }
 
-useEffect(() => {
+function App() {
+
+  useEffect(() => {
   const redirect = sessionStorage.redirect;
   if (redirect) {
     sessionStorage.removeItem("redirect");
@@ -29,7 +31,6 @@ useEffect(() => {
   }
 }, []);
 
-function App() {
   return (
     <BrowserRouter basename="/PhonePageFrontend/">
       <Routes>
