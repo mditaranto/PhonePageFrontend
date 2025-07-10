@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="public/img/logo.png" />
     <link rel="stylesheet" href="src/styles/Responsive.css" />
+    <link rel="stylesheet" href="src/styles/Global.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
@@ -33,6 +34,15 @@
       
     </div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+  </script>
     <script src="https://kit.fontawesome.com/7dc3015a44.js"
       crossorigin="anonymous"></script>
   </body>

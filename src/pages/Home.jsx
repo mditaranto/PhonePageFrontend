@@ -22,11 +22,11 @@ function Home() {
             <img src="img/logo.png" className="logo" alt="Logo" />
             <div className="buttons-container">
                 <button className="image-button" onClick={Shop1}
-                style={{ backgroundImage: 'url(/img/shop1.jpg)' }}>
+                style={{ backgroundImage: 'url(/PhonePageFrontend/img/shop1.jpg)' }}>
                     <div className="overlay">Shop 1</div>
                 </button>
                 <button className="image-button" onClick={Shop2}
-                style={{ backgroundImage: 'url(/img/shop2.jpg)' }}>
+                style={{ backgroundImage: 'url(/PhonePageFrontend/img/shop2.jpg)' }}>
                     <div className="overlay">Shop 2</div>
                 </button>
             </div>

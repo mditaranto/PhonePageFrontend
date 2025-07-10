@@ -4,7 +4,7 @@
   border: none;
   border-radius: 10px;
   padding: 0 15px;
-  background-color: #00D1B2;
+  background-color: #4400fd73;
   display: flex;
   align-items: center;
 }
@@ -23,7 +23,7 @@ input:focus {
 }
 
 #search-icon {
-  color: #0A1F15;
+  color: #ffffff;
 }
 
 /* Estilos para el contenedor */
@@ -39,5 +39,5 @@ input:focus {
 
 .calendar-icon {
   cursor: pointer; /* Cursor de puntero para indicar que es clicable */
-  color: black; /* Color negro para el icono */
+  color: rgb(255, 255, 255); /* Color negro para el icono */
 }

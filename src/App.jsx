@@ -23,14 +23,6 @@ function RegisterAndLogout() {
 
 function App() {
 
-  useEffect(() => {
-  const redirect = sessionStorage.redirect;
-  if (redirect) {
-    sessionStorage.removeItem("redirect");
-    window.history.replaceState(null, "", redirect);
-  }
-}, []);
-
   return (
     <BrowserRouter basename="/PhonePageFrontend/">
       <Routes>

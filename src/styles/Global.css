@@ -1,0 +1,44 @@
+:root {
+  /* Definir los colores como variables */
+  --primary-color: #9a8af5; /* Verde */
+  --link-color: #1E90FF; /* Azul */
+  --danger-color: #4200f7; /* Rojo */
+  --text-color: #000000; /* Dorado */
+  --icon-color: #ffffff; /* Blanco */   
+}
+
+.button.is-success {
+  background-color: var(--danger-color) !important;
+  color: var(--icon-color) !important;
+}
+
+.hero.is-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Usar las variables para modificar estilos globales */
+.navbar.is-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.button.is-link {
+  background-color: var(--link-color) !important;
+  color: var(--icon-color) !important;
+}
+
+.button.is-danger {
+  background-color: var(--danger-color) !important;
+  color: var(--icon-color) !important;
+}
+
+.navbar-item {
+  color: var(--text-color) !important;
+}
+
+.navbar-item:hover {
+  color: var(--danger-color) !important;
+}
+
+.button .icon i {
+  color: var(--icon-color) !important;
+}
