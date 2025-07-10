@@ -133,7 +133,7 @@ function Admin({ users, fetchData }) {
                                 Docs
                             </p>
                             <div className={`navbar-dropdown is-boxed ${isDocsActive ? "" : "is-hidden"}`}>
-                                <a className="navbar-item" href="/Orders">Orders</a>
+                                <a className="navbar-item" href="/PhonePageFrontend/Orders">Orders</a>
                                 <a className="navbar-item" href="cover.html">Support</a>
                             </div>
                         </div>

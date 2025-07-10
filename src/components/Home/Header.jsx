@@ -90,7 +90,7 @@ function Header({ orders, originalOrders, setOrders, fetchData, sitio }) {
                                 Docs
                             </p>
                             <div className={`navbar-dropdown is-boxed ${isDocsActive ? "" : "is-hidden"}`}>
-                                <a className="navbar-item" href="/Admin">Admin</a>
+                                <a className="navbar-item" href="/PhonePageFrontend/Admin">Admin</a>
                                 <a className="navbar-item" href="cover.html">Support</a>
                             </div>
                         </div>

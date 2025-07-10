@@ -117,11 +117,11 @@ function Order({ orders, fetchData, tableTab, sitio }) {
             customClass: isDarkMode ? 'swal2-dark' : '',
         });
         if (result.isConfirmed) {
-            window.open(`/pdf/fattura/${order.idOrder}`, '_blank');
+            window.open(`/PhonePageFrontend/pdf/fattura/${order.idOrder}`, '_blank');
         } else if (result.dismiss === 'backdrop' || result.dismiss === 'esc') {
             // No hacer nada si el usuario hace clic fuera del alert o presiona la tecla Esc
         } else {
-            window.open(`/pdf/data/${order.idOrder}`, '_blank');
+            window.open(`/PhonePageFrontend/pdf/data/${order.idOrder}`, '_blank');
         }
     };
 

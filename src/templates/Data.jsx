@@ -49,7 +49,7 @@ const Data = ({ FormData }) => {
   };
 
   const handleOrdiniButtonClick = () => {
-    window.location.href = '/Orders';
+    window.location.href = '/PhonePageFrontend/Orders';
   };
 
   const containerStyle = {
