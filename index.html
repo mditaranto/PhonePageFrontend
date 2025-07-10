@@ -11,8 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartphone Shop</title>
-    <script type="module" crossorigin src="/PhonePageFrontend/assets/index-B2jauSHG.js"></script>
-    <link rel="stylesheet" crossorigin href="/PhonePageFrontend/assets/index-DZK1ftFh.css">
+    <script type="module" crossorigin src="/PhonePageFrontend/assets/main-CCZXw4o0.js"></script>
+    <link rel="stylesheet" crossorigin href="/PhonePageFrontend/assets/main-DZK1ftFh.css">
   </head>
   <style>
     .footer {
@@ -33,6 +33,15 @@
     <div id="root">
       
     </div>
+    <script>
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+  </script>
     <script src="https://kit.fontawesome.com/7dc3015a44.js"
       crossorigin="anonymous"></script>
   </body>
