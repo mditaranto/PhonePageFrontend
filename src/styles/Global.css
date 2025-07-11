@@ -1,9 +1,9 @@
 :root {
   /* Definir los colores como variables */
-  --primary-color: #9a8af5; /* Verde */
+  --primary-color: #9a8af5; /* Lila */
   --link-color: #1E90FF; /* Azul */
-  --danger-color: #4200f7; /* Rojo */
-  --text-color: #000000; /* Dorado */
+  --danger-color: #4200f7; /* Morado */
+  --text-color: #000000; /* Negro */
   --icon-color: #ffffff; /* Blanco */   
 }
 

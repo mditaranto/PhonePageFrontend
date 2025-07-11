@@ -100,7 +100,7 @@ function Order({ orders, fetchData, tableTab, sitio }) {
     // Formatear fecha
     const formatDate = (dateString) => {
         const options = { day: 'numeric', month: 'short', year: 'numeric' };
-        return new Date(dateString).toLocaleDateString("it-IT", options);
+        return new Date(dateString).toLocaleDateString("es-ES", options);
     };
 
 

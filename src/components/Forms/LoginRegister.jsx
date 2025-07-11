@@ -58,7 +58,7 @@ function Form({ route, method }) {
                         <h3 className="title has-text-black">{name}</h3>
                         <hr className="login-hr"></hr>
                         <p className="subtitle ha-text-black">Please {name} to proceed.</p>
-                        <div className="box" style={{margin:'', backgroundColor: '#00D1B2' }}>
+                        <div className="box" style={{margin:'', backgroundColor: '#9a8af5' }}>
                             <br/>
                             <figure >
                                 <img src="img/logo.png" style={{width:320}}></img>
@@ -92,7 +92,7 @@ function Form({ route, method }) {
                                         </div>
                                     </div>
                                     
-                                    <button className="button is-block is-info is-large is-fullwidth" onClick={handleSubmit}>{name} <i className="fa fa-sign-in" aria-hidden="true"></i></button>
+                                    <button className="button is-block is-info is-large is-fullwidth" onClick={handleSubmit} style={{backgroundColor: '#4200f7'}}>{name} <i className="fa fa-sign-in" aria-hidden="true"></i></button>
                                 </form>
                             </FormProvider>
                         </div>
