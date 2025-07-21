@@ -133,7 +133,6 @@ function Header({ orders, originalOrders, setOrders, fetchData, sitio }) {
 
                 </div>
                 <div className="container m-1 has-text-right">
-                    <p className="title">{sitio}</p>
                 </div>
             </section>
 
